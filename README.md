@@ -1,4 +1,4 @@
-# BGSU-CS-2010-1006
+# BGSU-CS-2010
 For programming assignments in c++.
 
 
