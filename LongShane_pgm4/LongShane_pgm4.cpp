@@ -1,6 +1,3 @@
-// LongShane_pgm4.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -10,7 +7,7 @@ using namespace std;
 
 int main()
 {
- 
+
     // Initialization
 
     ifstream inFS;
@@ -51,7 +48,7 @@ int main()
         isbnChar = isbnChar - '0';
         sum = 0; // sets sum equal to 0 before the for loop runs, so that any previous values are cleared
 
-        for (i = 0; i != isbn.size()-1; ++i) {   // Runs the calculation for each digit of the IBSN, excluding the 13th digit
+        for (i = 0; i != isbn.size() - 1; ++i) {   // Runs the calculation for each digit of the IBSN, excluding the 13th digit
             c = isbn[i]; // sets the actual value of the digit at index i
             c = c - '0'; // changes to an integer
 
@@ -65,9 +62,9 @@ int main()
             }
 
             sum = sum + c; // increments sum by the value determined by the above conditional
-            
+
         }
-        
+
         // cout << "sum: " << sum << endl; // for debugging
 
         sum = sum % 10;
@@ -90,7 +87,7 @@ int main()
             cout << "No " << endl;
         }
 
-       inFS >> isbn; // inputs the next line in the input file stream and restarts the loop
+        inFS >> isbn; // inputs the next line in the input file stream and restarts the loop
     }
     if (!inFS.eof()) {
         cout << "-e -inp: Input error before reaching end of file." << endl;
