@@ -1,0 +1,45 @@
+int main() {
+
+	ifstream inFile;
+	ofstream outFile;
+
+	string num; // The numbers are too large to be contained by an integer, so we use a string
+	char endChar;
+	
+	inFile.open("integers.csv");
+	outFile.open("parity.csv");
+	
+	if (inFile.is_open()) {
+		cout << "File open success" << endl;
+		
+		inFile >> num;
+		endChar = num[num.size() - 1]
+
+
+		while (!inFile.eof()) {
+			inFile >> num;
+		
+			if (endChar == '1') {
+				outFile << num << "\t" << endChar << "\t\tOdd" << endl;
+				cout << num << "\t" << endChar << "\t\tOdd";    // \t = tab
+				} else {
+				outFile << num << "\t" << endChar << "\t\tEven" << endl;
+				cout << num << "\t" << endChar << "\t\tEven";
+				}
+			
+			} else {
+			cout << "File open error: " << strerror(errno) << endl;
+			}
+			cout << endl;
+		}
+		
+
+
+	
+	
+
+	inFile.close()
+	outFile.close()
+	
+
+}
