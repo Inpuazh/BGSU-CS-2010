@@ -1,30 +1,3 @@
-/*
-* Program: ISBN Validation
-* Process: Read a list of ISBN values from a file, and determine if the number is valid by calculating the checksum.
-* 
-*
-* Results: Display the list of ISBN values in the terminal and whether or not they are valid, then output all valid numbers only to an output file.
-*
-* Class: CS2010
-* Section: 1006
-*
-* Term: Fall 2023
-* Author: Shane Long
-*
-* Reflection: I spent many hours putting together this program. It took me a while on step two of the assignment, where we had to create the for loop to iterate over the string.
-* Eventually, with a little bit of guidance, I was able to figure it out and the rest of the program went smoothly. There was a lot of trial and error and debugging to make sure
-* the program ran correctly. One thing I was unsure about, however, is when I double checked all my work by looking up the ISBN numbers online, I kept getting invalid numbers even
-* though the program proved they were valid and I proved them valid by hand. I chalked it up to being that maybe the numbers just simply don't exist yet and were made up for the
-* purpose of the assignment, but I still can't help but second guess if I made any mistakes. That being said, I do feel confident in my work.
-* 
-* Note: The assignment has an error, where step 4 and the output details below step 4 are conflicting. One says that the output on the terminal and the output in the file should be
-* exactly the same, whereas the other wants the output file to only include valid entries. This code only includes valid entries in the output file, but to include the invalid entries
-* line 121 can be uncommented.
-* 
-* 
-* 
-*
-*/
 #include <iostream>
 #include <fstream>
 #include <string>
