@@ -1,0 +1,3 @@
+﻿  LongS_pgm7.cpp
+C:\Users\Shane\Desktop\vs c++\LongS_pgm7\LongS_pgm7.cpp(169,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  LongS_pgm7.vcxproj -> C:\Users\Shane\Desktop\vs c++\LongS_pgm7\x64\Debug\LongS_pgm7.exe
