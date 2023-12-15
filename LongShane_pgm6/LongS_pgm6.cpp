@@ -1,21 +1,3 @@
-/*
-* Program: Grade Analyzer
-* 
-* Process: Analyze a class's scores over three different chapters and compute various values.
-* Input: records.txt file that contains 3 scores, one for each chapter.
-* Results: Return a formatted output of the scores, the scores as percentages and the letter grade, along with the average grade, highest grade, lowest grade, and ABC rate of the class.
-*
-* Class: CS2010
-* Section: 1006
-*
-* Term: Fall 2023
-* Author: Shane Long
-*
-* Reflection: IThis program went well. There were no major issues I ran into while working on this program, other than one minor issue. One issue I ran into was during the input loop.
-* I ended up using two loops which cause the input to get messed up, however I couldn't figure out why for a while until someone pointed it out to me. After that, everything
-* was extremely straight forward. The out put looks basically exactly the same as the smaple output in the assignment, so I think this works out well.
-*
-*/
 
 #include <iostream>
 #include <string>
@@ -207,7 +189,7 @@ int main() {  // MAIN FUNCTION
     printRoster(ch1, ch2, ch3, totalGrades, SIZE_CLASS);
 
 
-    // step 5 - Print a line of ì*î followed by an empty line.
+    // step 5 - Print a line of ‚Äú*‚Äù followed by an empty line.
     cout << setw(80) << setfill('*') << "" << setfill(' ') << endl << endl;
 
 
@@ -219,7 +201,7 @@ int main() {  // MAIN FUNCTION
     printConvertedRosterWithLetterGrade(ch1, ch2, ch3, totalGrades, SIZE_CLASS);
 
 
-    // step 8 - Print a line of ì*î followed by an empty line.
+    // step 8 - Print a line of ‚Äú*‚Äù followed by an empty line.
     cout << setw(80) << setfill('*') << "" << setfill(' ') << endl << endl;
 
 
